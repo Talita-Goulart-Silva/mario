@@ -1,0 +1,167 @@
+html{
+    font-family: sans-serif;
+     
+}
+
+.header{
+    text-align: center;
+ 
+    background-color: #0D0D0D;
+}
+
+.header_logo{
+    width: 10em;
+    height: auto;
+   
+}
+
+#hamburguer{
+    background-color: #F28F38;
+    color: #0D0D0D;
+    display: block;
+    text-align: center;
+    padding: 0.3em;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.header_nav{
+    background-color: #0D0D0D;
+    display: none;
+}
+
+.header_nav.show {
+    display: block;
+}
+
+
+ul{
+    margin: 0;
+}
+
+.header_nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+}
+
+.header_nav a{
+    color: #F28F38;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.header_nav a:hover{
+    background-color: color-mix(in srgb, #F28F38, #ffffff 50%);
+    color: #0D0D0D;
+}
+
+@media screen and (min-width: 48em){/*768px maior que*/
+
+    #hamburguer{
+        display: none;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0D0D0D;
+    }
+
+
+    .header_logo{
+        margin-left: 2em;
+    }
+
+
+    .header_nav{
+        display: block;
+    }
+
+
+    .header_nav ul{
+        margin-right: 2em;
+        font-size: .9em;
+    }
+
+
+    .header_nav li{
+        display: inline-block;
+    }
+
+
+    .header_nav a{
+        border-radius: 5px;
+    }
+
+
+    .header_nav a:hover{
+        background-color: #e6530f;
+        color: #ffffff;
+    }
+}
+
+.fundo_main{
+    background-image: url(img/mario-bros.webp);
+    background-size: cover;
+    background-position:  center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.galeria a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    background-color: red;
+    padding: 1em 1.1em;
+    border-radius: 5px;
+    letter-spacing: .1em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.galeria a:hover {
+    background-color: black;
+    color: red;
+}
+footer{
+    background-color: #ed580d;
+    padding: 1em;
+    text-align: center;
+}
+
+.logos_footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.tamanho{
+    width: 2.5em;
+}
+
+.texto_footer{
+    font-size: 0.6em;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin:0;
+    padding-top: .8rem;
+    color: #0D0D0D;
+}
+
+@media screen and (min-width: 48em){
+
+    .logos_footer{
+        flex-direction: row;
+        justify-content: center;
+        gap:1.5em;
+    }
+
+}
